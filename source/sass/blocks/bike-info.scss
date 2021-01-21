@@ -1,0 +1,26 @@
+.bike-info {
+  display: flex;
+}
+
+.bike-info__description {
+  max-width: 393px;
+}
+
+.bike-info__description h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.bike-info__description p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.bike-info__choice {
+  max-width: 330px;
+}
