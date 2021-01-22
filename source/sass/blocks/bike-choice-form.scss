@@ -33,5 +33,18 @@
   padding-left: 29px;
   padding-bottom: 10px;
   color: #1c1c1c;
+}
 
+@media (max-width: $tablet-width) {
+  .bike-choice-form p {
+    font-size: 18px;
+    color: #000000;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .bike-info__choice button {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
 }

@@ -1,12 +1,22 @@
 .bike-info {
   display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 873px;
 }
 
 .bike-info__description {
-  max-width: 393px;
+  max-width: 355px;
+}
+
+.bike-info__description-log {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .bike-info__description h2 {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 46px;
   font-weight: 700;
   line-height: 64px;
@@ -14,6 +24,7 @@
 }
 
 .bike-info__description p {
+  margin: 0;
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
@@ -23,4 +34,59 @@
 
 .bike-info__choice {
   max-width: 330px;
+}
+
+@media (max-width: $tablet-width) {
+  .bike-info {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .bike-info__description {
+    margin-bottom: 140px;
+    max-width: 100%;
+  }
+
+  .bike-info__description-log {
+    margin-top: 10px;
+    margin-bottom: 85px;
+  }
+  
+  .bike-info__description h2 {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .bike-info__description p {
+    margin: 0 auto;
+    max-width: 60%;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .bike-info__choice {
+    margin: 0 auto;
+    max-width: 60%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .bike-info__description {
+    margin-bottom: 130px;
+    min-height: 324px;
+  }
+
+  .bike-info__description-log {
+    margin-bottom: 85px;
+  }
+  
+  .bike-info__description p {
+    max-width: 100%;
+  }
+
+  .bike-info__choice {
+    max-width: 100%;
+  }
 }

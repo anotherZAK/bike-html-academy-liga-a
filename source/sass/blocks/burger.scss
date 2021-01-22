@@ -1,0 +1,26 @@
+.burger {
+  display: none;
+}
+
+
+@media (max-width: $tablet-width) {
+  .burger {
+    display: block;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 50px;
+    background-color: #0ad9c6;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .burger {
+    right: 0;
+    width: 50px;
+  }
+}
