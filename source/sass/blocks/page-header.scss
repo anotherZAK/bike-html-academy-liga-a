@@ -1,0 +1,9 @@
+.page-header {
+  margin-bottom: 60px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 370px;
+  }
+}

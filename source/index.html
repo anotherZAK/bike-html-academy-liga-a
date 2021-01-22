@@ -10,7 +10,7 @@
 </head>
 
 <body class="page-body">
-  <header>
+  <header class="page-header">
     <div class="background-container background-container--header">
       <div class="container container--mobile">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -59,7 +59,17 @@
     </div>
   </header>
   <main>
-
+    <div class="container">
+      <section class="about-us">
+        <h2>Несколько фактов о нас</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">Самый широкий выбор велосипедов!</li>
+          <li class="about-us__item">Доставка велосипедов по всей России!</li>
+          <li class="about-us__item">Большой выбор крутых аксессуаров!</li>
+          <li class="about-us__item">Профессиональные консультации!</li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
@@ -76,16 +86,20 @@
     </div>
     <div class="container">
       <section class="page-footer__contacts">
+        <h2 class="visually-hidden">Свяжитесь с нами</h2>
         <a class="page-footer__contacts-link page-footer__contacts-link--email"
-          href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        <svg class="page-footer__icon page-footer__icon--mail" width="26" height="20">
-          <use xlink:href="img/sprite.svg#icon-mail"></use>
-        </svg>
+          href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru
+          <svg class="page-footer__icon page-footer__icon--mail" width="26" height="20">
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
+          </svg>
+        </a>
         <a class="page-footer__contacts-link page-footer__contacts-link--tel"
-          href="tel:+749978468446">+7(499)-784-684-46</a>
-        <svg class="page-footer__icon page-footer__icon--phone" width="22" height="23">
-          <use xlink:href="img/sprite.svg#icon-phone"></use>
-        </svg>
+          href="tel:+749978468446">+7(499)-784-684-46
+          <svg class="page-footer__icon page-footer__icon--phone" width="22" height="23">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+        </a>
+
       </section>
     </div>
     <script src="js/script.js"></script>
