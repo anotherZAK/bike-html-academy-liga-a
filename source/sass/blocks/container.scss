@@ -2,6 +2,11 @@
   margin: 0 auto;
   padding-left: 157px;
   padding-right: 157px;
+
+  &--bike-video {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: $tablet-width) {

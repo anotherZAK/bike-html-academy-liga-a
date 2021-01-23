@@ -1,0 +1,145 @@
+.bike-types {
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+
+.bike-types h2 {
+  margin: 0;
+  margin-bottom: 70px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.bike-types__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.bike-types__item:nth-child(3n-1) {
+  margin-top: 20px;
+}
+
+.bike-types__item:nth-child(3n-2) picture {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 30%;
+    left: -65px;
+    width: 180px;
+    height: 180px;
+    border: 27px solid #0ad9c6;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+.bike-types__item:nth-child(3n-1) picture {
+  position: relative;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 47px;
+    border: 8px solid #0ad9c6;
+  }
+
+  &::before {
+    top: -22px;
+    left: -22px;
+  }
+
+  &::after {
+    bottom: -12px;
+    right: -22px;
+  }
+}
+
+.bike-types__item:nth-child(3n) picture {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -46px;
+    right: -42px;
+    width: 95px;
+    height: 95px;
+    border: 17px solid #0ad9c6;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .bike-types h2 {
+    font-size: 24px;
+  }
+
+  .bike-types__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 68px;
+    padding-left: 68px;
+  }
+
+  .bike-types__item {
+    flex-grow: 1;
+    margin-bottom: 30px;
+
+    &:nth-child(3n-1) {
+      margin-top: 0;
+    }
+  }
+
+  .bike-types__item:nth-child(3n-2) picture {
+    &::before {
+      top: 65%;
+      left: -35px;
+      width: 127px;
+      height: 127px;
+      border-width: 18px;
+    }
+  }
+
+  .bike-types__item:nth-child(3n-1) picture {
+    &::after,
+    &::before {
+      content: none;
+    }
+  }
+
+  .bike-types__item:nth-child(3n) picture {
+    &::before {
+      top: -23px;
+      right: -20px;
+      width: 68px;
+      height: 68px;
+      border-width: 13px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .bike-types__list {
+    display: block;
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+  .bike-types__item:nth-child(3n-2) picture {
+    &::before {
+      top: 70%;
+      left: -25px;
+    }
+  }
+}

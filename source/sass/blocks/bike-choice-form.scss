@@ -1,7 +1,11 @@
 .bike-choice-form {
+  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  top: -556px;
+  right: 0;
+  max-width: 330px;
 }
 
 .bike-choice-form p {
@@ -13,7 +17,7 @@
   color: #ffffff;
 }
 
-.bike-info__choice button {
+.bike-choice-form button {
   font-size: 15px;
   font-weight: 600;
   padding-top: 20px;
@@ -26,7 +30,7 @@
   cursor: pointer;
 }
 
-.bike-info__choice input {
+.bike-choice-form input {
   width: 100%;
   font-size: 15px;
   padding-top: 14px;
@@ -36,6 +40,11 @@
 }
 
 @media (max-width: $tablet-width) {
+  .bike-choice-form {
+    position: static;
+    max-width: 100%;
+  }
+
   .bike-choice-form p {
     font-size: 18px;
     color: #000000;

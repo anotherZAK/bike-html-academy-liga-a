@@ -1,0 +1,13 @@
+.bike-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bike-card h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  order: 1;
+}

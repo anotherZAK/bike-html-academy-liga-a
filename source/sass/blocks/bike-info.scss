@@ -1,6 +1,4 @@
 .bike-info {
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   max-width: 873px;
 }
@@ -33,12 +31,13 @@
 }
 
 .bike-info__choice {
-  max-width: 330px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 873px;
 }
 
 @media (max-width: $tablet-width) {
   .bike-info {
-    flex-direction: column;
     max-width: 100%;
   }
 
@@ -48,10 +47,10 @@
   }
 
   .bike-info__description-log {
-    margin-top: 10px;
+    padding-top: 10px;
     margin-bottom: 85px;
   }
-  
+
   .bike-info__description h2 {
     font-size: 30px;
     line-height: 42px;
@@ -81,7 +80,7 @@
   .bike-info__description-log {
     margin-bottom: 85px;
   }
-  
+
   .bike-info__description p {
     max-width: 100%;
   }
