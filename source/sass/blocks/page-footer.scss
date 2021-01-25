@@ -1,10 +1,10 @@
 .page-footer__address {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .page-footer__address h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 29px;
   font-size: 30px;
   font-weight: 600;
   line-height: 30px;
@@ -22,12 +22,14 @@
 
 .page-footer__navigation {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   width: 66.4%;
 }
 
 .page-footer__map {
+  width: 100%;
   height: 530px;
+  border: none;
   background-image: url("../../img/png/bg-map-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -44,12 +46,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 552px;
+  padding-bottom: 100px;
+  max-width: 522px;
 }
 
 .page-footer__contacts-link {
+  padding-left: 20px;
   font-size: 16px;
   opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .page-footer__icon {
@@ -59,17 +67,22 @@
 
   &--mail {
     fill: #0ad9c6;
-    left: -40px;
+    left: -20px;
   }
 
   &--phone {
     fill: transparent;
-    left: 380px;
+    left: 337px;
   }
 }
 
 @media (max-width: $tablet-width) {
+  .page-footer__address {
+    margin-bottom: 20px;
+  }
+
   .page-footer__address h2 {
+    margin-bottom: 20px;
     font-size: 24px;
   }
 
@@ -78,6 +91,7 @@
   }
 
   .page-footer__navigation {
+    margin-bottom: 23px;
     width: 91%;
   }
 

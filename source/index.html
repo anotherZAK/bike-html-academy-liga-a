@@ -3,18 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Велосипеды, дорожные велосипеды, горные велосипеды, детские велосипеды"/>
   <title>Магазин велосипедов</title>
-  <link rel="preload" href="fonts/openSans-Bold.woff" as="font">
-  <link rel="preload" href="fonts/openSans-SemiBold.woff" as="font">
-  <link rel="preload" href="fonts/openSans-Regular.woff" as="font">
-  <link rel="preload" href="fonts/openSans-Light.woff" as="font">
-  <link rel="preload" href="fonts/openSans-Bold.woff2" as="font">
-  <link rel="preload" href="fonts/openSans-SemiBold.woff2" as="font">
-  <link rel="preload" href="fonts/openSans-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/openSans-Light.woff2" as="font">
+  <link rel="preload" href="fonts/openSans-Bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/openSans-SemiBold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/openSans-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/openSans-Light.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
 </head>
 
 <body class="page-body">
@@ -44,7 +42,7 @@
         <section class="bike-info">
           <h1 class="visually-hidden">Лучшие велосипеды</h1>
           <div class="bike-info__description">
-            <a class="bike-info__description-log" href="">
+            <a class="bike-info__description-log">
               <img src="img/svg/logo.svg" width="68" height="20" alt="Логотип сайта">
             </a>
             <h2>Мы продаем велосипеды</h2>
@@ -55,15 +53,15 @@
     </div>
   </header>
   <main>
-    <div class="container">
-      <section class="bike-info__choice">
+    <div class="container container--about-us">
+      <section class="bike-choice">
         <form class="bike-choice-form" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <label>
+          <label><span class="visually-hidden">Введите ваше имя</span>
             <input type="text" name="bike-choice-user-name" placeholder="Введите Ваше Имя" required>
           </label>
-          <label>
+          <label><span class="visually-hidden">Введите ваш номер телефона</span>
             <input type="tel" name="bike-choice-user-phone" placeholder="Введите Ваш номер телефона" required>
           </label>
           <button type="submit">Подобрать велосипед мечты</button>
@@ -94,12 +92,11 @@
                     srcset="img/jpg/road-bike-tablet-mobile@1x.webp 1x, img/jpg/road-bike-tablet-mobile@2x.webp 2x">
                   <source type="image/webp"
                     srcset="img/jpg/road-bike-desktop@1x.webp 1x, img/jpg/road-bike-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="img/jpg/road-bike-tablet-mobile@1x.jpg 1x, img/jpg/road-bike-tablet-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="img/jpg/road-bike-tablet-mobile@1x.jpg 1x, img/jpg/road-bike-tablet-mobile@2x.jpg 2x">
-                  <img src="img/jpg/road-bike-desktop@1x.jpg" width="342" height="503" srcset="img/jpg/road-bike-desktop@2x.jpg"
-                    alt="дорожный велосипед">
+                  <div class="bike-card__img-wrap">
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img src="img/jpg/road-bike-desktop@1x.jpg" width="342" height="503"
+                      srcset="img/jpg/road-bike-desktop@2x.jpg" alt="дорожный велосипед">
+                  </div>
                 </picture>
               </div>
             </li>
@@ -113,12 +110,11 @@
                     srcset="img/jpg/mountain-bike-tablet-mobile@1x.webp 1x, img/jpg/mountain-bike-tablet-mobile@2x.webp 2x">
                   <source type="image/webp"
                     srcset="img/jpg/mountain-bike-desktop@1x.webp 1x, img/jpg/mountain-bike-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="img/jpg/mountain-bike-tablet-mobile@1x.jpg 1x, img/jpg/mountain-bike-tablet-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="img/jpg/mountain-bike-tablet-mobile@1x.jpg 1x, img/jpg/mountain-bike-tablet-mobile@2x.jpg 2x">
-                  <img src="img/jpg/mountain-bike-desktop@1x.jpg" width="342" height="566" srcset="img/jpg/mountain-bike-desktop@2x.jpg"
-                    alt="горный велосипед">
+                  <div class="bike-card__img-wrap">
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img src="img/jpg/mountain-bike-desktop@1x.jpg" width="342" height="566"
+                      srcset="img/jpg/mountain-bike-desktop@2x.jpg" alt="горный велосипед">
+                  </div>
                 </picture>
               </div>
             </li>
@@ -132,12 +128,11 @@
                     srcset="img/jpg/child-bike-tablet-mobile@1x.webp 1x, img/jpg/child-bike-tablet-mobile@2x.webp 2x">
                   <source type="image/webp"
                     srcset="img/jpg/child-bike-desktop@1x.webp 1x, img/jpg/child-bike-desktop@2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="img/jpg/child-bike-tablet-mobile@1x.jpg 1x, img/jpg/child-bike-tablet-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="img/jpg/child-bike-tablet-mobile@1x.jpg 1x, img/jpg/child-bike-tablet-mobile@2x.jpg 2x">
-                  <img src="img/jpg/child-bike-desktop@1x.jpg" width="342" height="512" srcset="img/jpg/child-bike-desktop@2x.jpg"
-                    alt="детский велосипед">
+                  <div class="bike-card__img-wrap">
+                    <!-- 1х: 342px; 2x: 684px -->
+                    <img src="img/jpg/child-bike-desktop@1x.jpg" width="342" height="512"
+                      srcset="img/jpg/child-bike-desktop@2x.jpg" alt="детский велосипед">
+                  </div>
                 </picture>
               </div>
             </li>
@@ -157,12 +152,9 @@
               srcset="img/jpg/bike-video-cover-tablet@1x.webp 1x, img/jpg/bike-video-cover-tablet@2x.webp 2x">
             <source type="image/webp"
               srcset="img/jpg/bike-video-cover-desktop@1x.webp 1x, img/jpg/bike-video-cover-desktop@2x.webp 2x">
-            <source media="(max-width: 767px)"
-              srcset="img/jpg/bike-video-cover-mobile@1x.jpg 1x, img/jpg/bike-video-cover-mobile@2x.jpg 2x">
-            <source media="(max-width: 1023px)"
-              srcset="img/jpg/bike-video-cover-tablet@1x.jpg 1x, img/jpg/bike-video-cover-tablet@2x.jpg 2x">
-            <img src="img/jpg/bike-video-cover-desktop@1x.jpg" width="929" height="522" srcset="img/jpg/bike-video-cover-desktop@2x.jpg"
-              alt="обложка видео про велосипеды">
+              <!-- 1х: 929px; 2x: 1858px -->
+            <img src="img/jpg/bike-video-cover-desktop@1x.jpg" width="929" height="522"
+              srcset="img/jpg/bike-video-cover-desktop@2x.jpg" alt="обложка видео про велосипеды">
           </picture>
           <button type="button"><span class="visually-hidden">Кнопка воспроизведения видео</span></button>
         </section>
@@ -180,7 +172,7 @@
     <div class="page-footer__navigation">
       <iframe class="page-footer__map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3997.3696313346054!2d30.324539302935804!3d59.93737202248012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1611319078311!5m2!1sru!2sru"
-        width="100%" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     <div class="container">
       <section class="page-footer__contacts">
@@ -192,13 +184,15 @@
           </svg>
         </a>
         <a class="page-footer__contacts-link page-footer__contacts-link--tel"
-          href="tel:+749978468446">+7(499)-784-684-46
+          href="tel:+749978468446">+7(499) -784-684-46
           <svg class="page-footer__icon page-footer__icon--phone" width="22" height="23">
             <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
         </a>
       </section>
     </div>
-    <script src="js/script.js"></script>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

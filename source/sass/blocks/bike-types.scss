@@ -1,11 +1,11 @@
 .bike-types {
-  margin-bottom: 100px;
-  padding-bottom: 100px;
+  padding-top: 148px;
+  padding-bottom: 128px;
 }
 
 .bike-types h2 {
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 48px;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -20,11 +20,15 @@
   list-style: none;
 }
 
-.bike-types__item:nth-child(3n-1) {
-  margin-top: 20px;
+.bike-types__item:nth-child(3n-2) {
+  margin-top: 10px;
 }
 
-.bike-types__item:nth-child(3n-2) picture {
+.bike-types__item:nth-child(3n-1) {
+  margin-top: 39px;
+}
+
+.bike-types__item:nth-child(3n-2) .bike-card__img-wrap {
   position: relative;
   z-index: 1;
 
@@ -32,7 +36,7 @@
     position: absolute;
     content: "";
     top: 30%;
-    left: -65px;
+    left: -60px;
     width: 180px;
     height: 180px;
     border: 27px solid #0ad9c6;
@@ -41,7 +45,7 @@
   }
 }
 
-.bike-types__item:nth-child(3n-1) picture {
+.bike-types__item:nth-child(3n-1) .bike-card__img-wrap {
   position: relative;
 
   &::after,
@@ -54,24 +58,24 @@
   }
 
   &::before {
-    top: -22px;
-    left: -22px;
+    top: -19px;
+    left: -19px;
   }
 
   &::after {
-    bottom: -12px;
+    bottom: -5px;
     right: -22px;
   }
 }
 
-.bike-types__item:nth-child(3n) picture {
+.bike-types__item:nth-child(3n) .bike-card__img-wrap {
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
-    top: -46px;
-    right: -42px;
+    top: -32px;
+    right: -37px;
     width: 95px;
     height: 95px;
     border: 17px solid #0ad9c6;
@@ -80,7 +84,13 @@
 }
 
 @media (max-width: $tablet-width) {
+  .bike-types {
+    padding-top: 54px;
+    padding-bottom: 22px;
+  }
+  
   .bike-types h2 {
+    margin-bottom: 33px;
     font-size: 24px;
   }
 
@@ -88,22 +98,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 0;
     padding-right: 68px;
     padding-left: 68px;
   }
 
   .bike-types__item {
     flex-grow: 1;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
-    &:nth-child(3n-1) {
+    &:nth-child(3n-2),
+    &:nth-child(3n-1),
+    &:nth-child(3n) {
       margin-top: 0;
     }
   }
 
-  .bike-types__item:nth-child(3n-2) picture {
+  .bike-types__item img {
+    max-width: 270px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .bike-types__item:nth-child(3n-2) img {
+    object-position: 50% 50%;
+  }
+
+  .bike-types__item:nth-child(3n-2) .bike-card__img-wrap {
     &::before {
-      top: 65%;
+      top: 63%;
       left: -35px;
       width: 127px;
       height: 127px;
@@ -111,17 +135,25 @@
     }
   }
 
-  .bike-types__item:nth-child(3n-1) picture {
+  .bike-types__item:nth-child(3n) img {
+    object-position: 50% 50%;
+  }
+
+  .bike-types__item:nth-child(3n-1) .bike-card__img-wrap {
     &::after,
     &::before {
       content: none;
     }
   }
 
-  .bike-types__item:nth-child(3n) picture {
+  .bike-types__item:nth-child(3n) img {
+    object-position: 50% 80%;
+  }
+
+  .bike-types__item:nth-child(3n) .bike-card__img-wrap {
     &::before {
-      top: -23px;
-      right: -20px;
+      top: -19px;
+      right: -24px;
       width: 68px;
       height: 68px;
       border-width: 13px;
@@ -136,7 +168,7 @@
     padding-left: 9px;
   }
 
-  .bike-types__item:nth-child(3n-2) picture {
+  .bike-types__item:nth-child(3n-2) .bike-card__img-wrap {
     &::before {
       top: 70%;
       left: -25px;

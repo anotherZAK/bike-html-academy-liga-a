@@ -1,13 +1,13 @@
 .bike-video {
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
   min-height: 706px;
 }
 
 .bike-video h2 {
   margin: 0;
-  margin-bottom: 10px;
-  padding-top: 60px;
+  margin-bottom: 18px;
+  padding-top: 122px;
   font-size: 30px;
   font-weight: 600;
   line-height: 30px;
@@ -29,16 +29,16 @@
 
 .bike-video img {
   position: absolute;
-  top: 300px;
+  top: 282px;
   left: 50%;
   margin-left: -464px;
 }
 
 .bike-video button {
   position: absolute;
-  top: 480px;
+  top: 511px;
   left: 50%;
-  margin-left: -20px;
+  margin-left: -33px;
   width: 65px;
   height: 65px;
   border: none;
@@ -56,14 +56,20 @@
     background-color: #000000;
     clip-path: polygon(0 100%, 100% 50%, 0% 0%);
   }
+
+  &:hover {
+    box-shadow: 0 0 4px 5px #ffffff;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .bike-video {
+    margin-bottom: 155px;
     min-height: 413px;
   }
 
   .bike-video h2 {
+    padding-top: 71px;
     font-size: 24px;
   }
 
@@ -72,13 +78,24 @@
   }
 
   .bike-video img {
-    left: 50%;
+    top: 217px;
     margin-left: -251px;
+    max-width: 503px;
   }
 
   .bike-video button {
-    position: absolute;
-    top: 280px;
+    top: 312px;
+    margin-left: -45px;
+    width: 90px;
+    height: 90px;
+
+    &::after {
+      top: 34px;
+      left: 40px;
+      width: 17px;
+      height: 22px;
+      clip-path: polygon(0 100%, 100% 50%, 0% 0%);
+    }
   }
 }
 
@@ -88,12 +105,11 @@
   }
 
   .bike-video img {
-    left: 50%;
     margin-left: -144px;
+    max-width: 288px;
   }
 
   .bike-video button {
-    position: absolute;
     top: 330px;
   }
 }
