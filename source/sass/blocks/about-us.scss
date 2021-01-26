@@ -8,6 +8,7 @@
   font-size: 30px;
   font-weight: 600;
   text-align: center;
+  letter-spacing: -0.005em;
   color: #1f1f1f;
 }
 
@@ -58,8 +59,12 @@
 }
 
 @media (max-width: $mobile-width) {
+  .about-us {
+    margin-bottom: 81px;
+  }
+
   .about-us h2 {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   .about-us__list {
@@ -67,7 +72,16 @@
   }
 
   .about-us__item {
-    margin-bottom: 80px;
+    margin-bottom: 89px;
     font-size: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      top: -52px;
+      left: calc(50% - 20px);
+    }
   }
 }

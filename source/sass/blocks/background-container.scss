@@ -40,6 +40,7 @@
     &--header {
       height: 390px;
       background-image: url("../../img/jpg/bg-bike-mobile@1x.jpg");
+      background-color: #1d1d1d;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/jpg/bg-bike-mobile@2x.jpg");

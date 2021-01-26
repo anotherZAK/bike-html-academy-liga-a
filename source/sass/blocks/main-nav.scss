@@ -71,13 +71,13 @@
 
     &--opened {
       position: relative;
-      margin-top: 480px;
+      margin-top: 568px;
     }
 
     &--opened .burger {
       position: absolute;
-      top: -480px;
-      right: -21px;
+      top: -567px;
+      right: -16px;
       background-color: transparent;
 
       &::before,
@@ -103,7 +103,7 @@
 
   .main-nav__list {
     position: absolute;
-    top: -400px;
+    top: -470px;
     display: block;
     margin: 0;
     margin-left: auto;
@@ -112,7 +112,7 @@
 
   .main-nav__item {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 
     &::after {
       position: absolute;
@@ -140,12 +140,12 @@
     &::before,
     &::after {
       position: absolute;
-      top: 50%;
-      right: 10%;
+      top: 49%;
+      right: 2%;
       content: "";
-      width: 12px;
-      height: 3px;
-      background: #91929b;
+      width: 9px;
+      height: 2px;
+      background-color: #91929b;
     }
 
     &::before {
@@ -155,6 +155,15 @@
 
     &::after {
       transform: rotate(-45deg);
+    }
+
+    &:hover {
+      opacity: 0.7;
+
+      &::before,
+      &::after {
+        background-color: #0ad9c6;
+      }
     }
   }
 }

@@ -53,6 +53,14 @@
 .page-footer__contacts-link {
   padding-left: 20px;
   font-size: 16px;
+
+  &:hover .page-footer__icon {
+    transform: scale(1.55);
+    transition: 0.35s;
+  }
+}
+
+.page-footer__contacts-link span {
   opacity: 0.5;
 
   &:hover {
@@ -103,6 +111,10 @@
       background-size: 698px 545px;
     }
   }
+
+  .page-footer__contacts {
+    padding-bottom: 70px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -111,10 +123,11 @@
   }
 
   .page-footer__address p {
-    width: 288px;
+    max-width: 92%;
   }
 
   .page-footer__navigation {
+    margin-bottom: 16px;
     width: 100%;
   }
 
@@ -133,19 +146,27 @@
     align-items: center;
   }
 
+  .page-footer__contacts-link {
+    margin-bottom: 13px;
+
+    &--email {
+      padding-left: 40px;
+    }
+  }
+
   .page-footer__icon {
     position: absolute;
     stroke: #0ad9c6;
 
     &--mail {
-      top: 5px;
-      left: calc(50% - 140px);
+      top: 9px;
+      left: calc(50% - 130px);
       fill: #0ad9c6;
     }
 
     &--phone {
-      top: 35px;
-      left: calc(50% - 97px);
+      top: 48px;
+      left: calc(50% - 101px);
       fill: transparent;
     }
   }

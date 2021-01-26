@@ -88,7 +88,7 @@
     padding-top: 54px;
     padding-bottom: 22px;
   }
-  
+
   .bike-types h2 {
     margin-bottom: 33px;
     font-size: 24px;
@@ -162,16 +162,30 @@
 }
 
 @media (max-width: $mobile-width) {
+  .bike-types {
+    padding-bottom: 12px;
+  }
+
   .bike-types__list {
     display: block;
     padding-right: 9px;
     padding-left: 9px;
   }
 
+  .bike-types__item {
+    margin-bottom: 43px;
+  }
+
   .bike-types__item:nth-child(3n-2) .bike-card__img-wrap {
     &::before {
-      top: 70%;
+      top: 63%;
       left: -25px;
+    }
+  }
+
+  .bike-types__item:nth-child(3n) .bike-card__img-wrap {
+    &::before {
+      right: -14px;
     }
   }
 }

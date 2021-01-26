@@ -68,7 +68,6 @@
     margin-left: 8px;
     padding-left: 23px;
     border: 1px solid #c9ccd4;
-    border-radius: 4px;
   }
 
   .bike-choice-form button {
@@ -78,5 +77,24 @@
     &:hover {
       box-shadow: 0 0 4px 5px #025750;
     }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .bike-choice-form {
+    max-width: 100%;
+    gap: 19px;
+  }
+
+  .bike-choice-form input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .bike-choice-form button {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 17px;
+    padding-bottom: 18px;
   }
 }
