@@ -275,6 +275,13 @@ img {
     .main-nav--opened {
       position: relative;
       margin-top: 568px; }
+      .main-nav--opened .main-nav__list {
+        position: absolute;
+        top: -470px;
+        display: block;
+        margin: 0;
+        margin-left: auto;
+        padding-left: 0; }
     .main-nav--opened .burger {
       position: absolute;
       top: -567px;
@@ -295,13 +302,6 @@ img {
       .main-nav--opened .burger::after {
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg); }
-  .main-nav__list {
-    position: absolute;
-    top: -470px;
-    display: block;
-    margin: 0;
-    margin-left: auto;
-    padding-left: 0; }
   .main-nav__item {
     position: relative;
     margin-bottom: 23px; }
