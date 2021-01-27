@@ -136,7 +136,7 @@
   }
 
   .bike-types__item:nth-child(3n) img {
-    object-position: 50% 50%;
+    object-position: 50% 80%;
   }
 
   .bike-types__item:nth-child(3n-1) .bike-card__img-wrap {
@@ -144,10 +144,6 @@
     &::before {
       content: none;
     }
-  }
-
-  .bike-types__item:nth-child(3n) img {
-    object-position: 50% 80%;
   }
 
   .bike-types__item:nth-child(3n) .bike-card__img-wrap {

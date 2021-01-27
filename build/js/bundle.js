@@ -1,1 +1,64 @@
-!function(){"use strict";var e,t,n;(e=document.querySelector(".main-nav")).classList.remove("main-nav--nojs"),e.addEventListener("click",(function(){e.classList.toggle("main-nav--opened"),e.classList.toggle("main-nav--closed")})),t=new RegExp("\\+[0-9]{11}"),(n=document.querySelector("#bike-choice-user-phone-id")).addEventListener("invalid",(function(){t.test(n.value)?n.setCustomValidity(""):n.setCustomValidity("Введите телефон в формате: +X(XXX)-XXX-XX-XX")}))}();
+/******/ "use strict";
+!function() {
+/*!**********************************!*\
+  !*** ./source/js/burger-menu.js ***!
+  \**********************************/
+
+
+(function () {
+  var burgerToggle = document.querySelector('.main-nav');
+
+  burgerToggle.classList.remove('main-nav--nojs');
+
+  burgerToggle.addEventListener('click', function () {
+    burgerToggle.classList.toggle('main-nav--opened');
+    burgerToggle.classList.toggle('main-nav--closed');
+  });
+})();
+
+}();
+!function() {
+/*!*********************************!*\
+  !*** ./source/js/form-check.js ***!
+  \*********************************/
+
+
+(function () {
+  var phonePattern = new RegExp('[\+][0-9]{1}[\(]\[0-9]{3}[\)][0-9]{3}[\-][0-9]{2}[\-][0-9]{2}');
+  var userTel = document.querySelector('#bike-choice-user-phone-id');
+
+  userTel.addEventListener('input', function () {
+    if (!phonePattern.test(userTel.value)) {
+      userTel.setCustomValidity('Введите телефон в формате: +X(XXX)-XXX-XX-XX');
+    } else {
+      userTel.setCustomValidity('');
+    }
+  });
+})();
+
+}();
+!function() {
+/*!*************************************!*\
+  !*** ./source/js/anchors-scroll.js ***!
+  \*************************************/
+
+
+(function () {
+  var anchorsList = document.querySelector('.main-nav__list');
+
+  var handleAnchorClick = function (evt) {
+    if (evt.target.classList.value === 'main-nav__link') {
+      evt.preventDefault();
+      var blockId = evt.target.hash;
+
+      document.querySelector(blockId).scrollIntoView({
+        block: 'start',
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  anchorsList.addEventListener('click', handleAnchorClick);
+})();
+
+}();
