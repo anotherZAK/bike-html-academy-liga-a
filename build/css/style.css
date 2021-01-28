@@ -229,17 +229,18 @@ img {
           justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
   list-style: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .main-nav__item {
-  margin-top: 3px; }
+  margin-top: 15px; }
 
 .main-nav__link {
   display: block;
-  padding-top: 17px;
+  padding-top: 5px;
   padding-right: 22px;
-  padding-bottom: 8px;
+  padding-bottom: 3px;
   padding-left: 20px;
   font-weight: 300;
   font-size: 16px;
@@ -276,7 +277,13 @@ img {
               transform: translateX(-10px); }
     .main-nav--opened {
       position: relative;
-      margin-top: 568px; }
+      margin-top: 568px;
+      top: 0;
+      left: 0;
+      overflow: auto;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999; }
       .main-nav--opened .main-nav__list {
         position: absolute;
         top: -470px;
@@ -560,7 +567,7 @@ img {
   left: 50%;
   margin-left: -464px; }
 
-.bike-video button {
+.bike-video__link {
   position: absolute;
   top: 511px;
   left: 50%;
@@ -569,9 +576,8 @@ img {
   height: 65px;
   border: none;
   border-radius: 50%;
-  background-color: #0ad9c6;
-  cursor: pointer; }
-  .bike-video button::after {
+  background-color: #0ad9c6; }
+  .bike-video__link::after {
     position: absolute;
     content: "";
     top: 24px;
@@ -581,7 +587,7 @@ img {
     background-color: #000000;
     -webkit-clip-path: polygon(0 100%, 100% 50%, 0% 0%);
             clip-path: polygon(0 100%, 100% 50%, 0% 0%); }
-  .bike-video button:hover {
+  .bike-video__link:hover {
     -webkit-box-shadow: 0 0 4px 5px #ffffff;
             box-shadow: 0 0 4px 5px #ffffff; }
 
@@ -598,12 +604,12 @@ img {
     top: 217px;
     margin-left: -251px;
     max-width: 503px; }
-  .bike-video button {
+  .bike-video__link {
     top: 312px;
     margin-left: -45px;
     width: 90px;
     height: 90px; }
-    .bike-video button::after {
+    .bike-video__link::after {
       top: 34px;
       left: 40px;
       width: 17px;
@@ -620,13 +626,13 @@ img {
     top: 271px;
     margin-left: -144px;
     max-width: 288px; }
-  .bike-video button {
+  .bike-video__link {
     top: 320px;
     width: 65px;
     height: 65px;
     left: 50%;
     margin-left: -33px; }
-    .bike-video button::after {
+    .bike-video__link::after {
       position: absolute;
       content: "";
       top: 24px;
@@ -753,8 +759,9 @@ img {
     position: static;
     margin: 0 auto;
     max-width: 78%;
-    gap: 23px; }
+    gap: 20px; }
   .bike-choice-form p {
+    margin-bottom: 8px;
     font-size: 18px;
     color: #000000; }
   .bike-choice-form input {
@@ -773,6 +780,8 @@ img {
   .bike-choice-form {
     max-width: 100%;
     gap: 19px; }
+  .bike-choice-form p {
+    margin-bottom: 0; }
   .bike-choice-form input {
     width: 100%;
     margin-left: 0; }
@@ -827,13 +836,13 @@ img {
 
 .background-container--desktop {
   height: 825px;
-  background-image: url("../../img/jpg/bg-bike-desktop@1x.jpg");
+  background-image: url("../img/jpg/bg-bike-desktop@1x.jpg");
   background-color: #101010;
   background-position: center 100%;
   background-repeat: no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .background-container--desktop {
-      background-image: url("../../img/jpg/bg-bike-desktop@2x.jpg");
+      background-image: url("../img/jpg/bg-bike-desktop@2x.jpg");
       background-size: 1440px 825px; } }
 
 .background-container--bike-types {
@@ -845,10 +854,10 @@ img {
 @media (max-width: 1023px) {
   .background-container--header {
     height: 340px;
-    background-image: url("../../img/jpg/bg-bike-tablet@1x.jpg"); } }
+    background-image: url("../img/jpg/bg-bike-tablet@1x.jpg"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .background-container--header {
-      background-image: url("../../img/jpg/bg-bike-tablet@2x.jpg");
+      background-image: url("../img/jpg/bg-bike-tablet@2x.jpg");
       background-size: 767px 340px; } }
 
 @media (max-width: 1023px) {
@@ -864,23 +873,23 @@ img {
       width: 100%;
       height: 340px;
       background-color: #101010;
-      background-image: url("../../img/jpg/bg-bike-tablet@1x.jpg");
+      background-image: url("../img/jpg/bg-bike-tablet@1x.jpg");
       background-position: center 100%;
       background-repeat: no-repeat;
       z-index: -1; } }
     @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
       .background-container--nojs::after {
-        background-image: url("../../img/jpg/bg-bike-tablet@2x.jpg");
+        background-image: url("../img/jpg/bg-bike-tablet@2x.jpg");
         background-size: 767px 340px; } }
 
 @media (max-width: 767px) {
   .background-container--header {
     height: 390px;
-    background-image: url("../../img/jpg/bg-bike-mobile@1x.jpg");
+    background-image: url("../img/jpg/bg-bike-mobile@1x.jpg");
     background-color: #1d1d1d; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .background-container--header {
-      background-image: url("../../img/jpg/bg-bike-mobile@2x.jpg");
+      background-image: url("../img/jpg/bg-bike-mobile@2x.jpg");
       background-size: 319px 390px; } }
 
 @media (max-width: 767px) {
@@ -889,10 +898,10 @@ img {
     .background-container--nojs::after {
       height: 390px;
       background-color: #1d1d1d;
-      background-image: url("../../img/jpg/bg-bike-mobile@1x.jpg"); } }
+      background-image: url("../img/jpg/bg-bike-mobile@1x.jpg"); } }
     @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
       .background-container--nojs::after {
-        background-image: url("../../img/jpg/bg-bike-mobile@2x.jpg");
+        background-image: url("../img/jpg/bg-bike-mobile@2x.jpg");
         background-size: 319px 390px; } }
 
 .about-us {

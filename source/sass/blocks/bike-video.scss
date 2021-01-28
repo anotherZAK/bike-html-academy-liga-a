@@ -34,7 +34,7 @@
   margin-left: -464px;
 }
 
-.bike-video button {
+.bike-video__link {
   position: absolute;
   top: 511px;
   left: 50%;
@@ -44,7 +44,6 @@
   border: none;
   border-radius: 50%;
   background-color: #0ad9c6;
-  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -83,7 +82,7 @@
     max-width: 503px;
   }
 
-  .bike-video button {
+  .bike-video__link {
     top: 312px;
     margin-left: -45px;
     width: 90px;
@@ -115,7 +114,7 @@
     max-width: 288px;
   }
 
-  .bike-video button {
+  .bike-video__link {
     top: 320px;
     width: 65px;
     height: 65px;

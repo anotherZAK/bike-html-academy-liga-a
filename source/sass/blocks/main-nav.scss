@@ -10,19 +10,20 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
   list-style: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .main-nav__item {
-  margin-top: 3px;
+  margin-top: 15px;
 }
 
 .main-nav__link {
   display: block;
-  padding-top: 17px;
+  padding-top: 5px;
   padding-right: 22px;
-  padding-bottom: 8px;
+  padding-bottom: 3px;
   padding-left: 20px;
   font-weight: 300;
   font-size: 16px;
