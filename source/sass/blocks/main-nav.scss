@@ -42,6 +42,7 @@
   }
 
   .main-nav {
+    position: relative;
     margin-bottom: 0;
     max-width: 100%;
 
@@ -73,8 +74,9 @@
     }
 
     &--opened {
-      position: relative;
+      position: absolute;
       margin-top: 568px;
+      z-index: 100;
 
       .main-nav__list {
         position: absolute;
