@@ -5,5 +5,9 @@
 @media (max-width: $tablet-width) {
   .page-header {
     margin-bottom: 550px;
+
+    &--js {
+      margin-bottom: 70px;
+    }
   }
 }

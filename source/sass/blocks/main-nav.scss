@@ -50,6 +50,15 @@
       position: relative;
       margin-top: 101px;
       margin-bottom: 119px;
+
+      .main-nav__link {
+        padding-left: 0;
+
+        &::before,
+        &::after {
+          right: 9px;
+        }
+      }
     }
 
     &--nojs .burger {
@@ -88,7 +97,7 @@
         position: absolute;
         display: block;
         margin: 0;
-        padding-left: 16px;
+        width: 100%;
       }
     }
 
@@ -119,14 +128,14 @@
 
   .main-nav__item {
     position: relative;
-    margin-bottom: 23px;
+    margin-bottom: 30px;
 
     &::after {
       position: absolute;
       content: "";
       top: 0;
       left: -485px;
-      width: 1500px;
+      width: 1520px;
       height: 60px;
       background-color: #fbf8f8;
       z-index: -10;
@@ -137,18 +146,18 @@
     position: relative;
     font-size: 20px;
     font-weight: 400;
-    padding-left: 0;
+    padding-left: 16px;
     padding-top: 13px;
     padding-right: 260px;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
     color: #48494d;
     opacity: 1;
 
     &::before,
     &::after {
       position: absolute;
-      top: 49%;
-      right: 2%;
+      top: 55%;
+      right: 24px;
       content: "";
       width: 9px;
       height: 2px;
@@ -177,6 +186,6 @@
 
 @media (max-width: $mobile-width) {
   .main-nav__link {
-    padding-right: 60px;
+    padding-right: 35px;
   }
 }

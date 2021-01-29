@@ -15,7 +15,7 @@
   mainNav.classList.remove('main-nav--nojs');
   bgContainer.classList.remove('background-container--nojs');
   bgContainer.classList.add('background-container--header');
-  pageHeader.style.marginBottom = 70 + 'px';
+  pageHeader.classList.add('page-header--js');
 
   burgerToggle.addEventListener('click', function () {
     body.classList.toggle('page-body--fixed');
