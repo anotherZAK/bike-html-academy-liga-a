@@ -848,11 +848,12 @@ img {
   background-image: url("../img/jpg/bg-bike-desktop@1x.jpg");
   background-color: #101010;
   background-position: center 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .background-container--desktop {
       background-image: url("../img/jpg/bg-bike-desktop@2x.jpg");
-      background-size: 1440px 825px; } }
+      background-size: cover; } }
 
 .background-container--bike-types {
   background-color: #f6f7f9; }
@@ -863,11 +864,12 @@ img {
 @media (max-width: 1023px) {
   .background-container--header {
     height: 340px;
-    background-image: url("../img/jpg/bg-bike-tablet@1x.jpg"); } }
+    background-image: url("../img/jpg/bg-bike-tablet@1x.jpg");
+    background-size: cover; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .background-container--header {
       background-image: url("../img/jpg/bg-bike-tablet@2x.jpg");
-      background-size: 767px 340px; } }
+      background-size: cover; } }
 
 @media (max-width: 1023px) {
   .background-container--nojs {
@@ -885,21 +887,23 @@ img {
       background-image: url("../img/jpg/bg-bike-tablet@1x.jpg");
       background-position: center 100%;
       background-repeat: no-repeat;
+      background-size: cover;
       z-index: -1; } }
     @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
       .background-container--nojs::after {
         background-image: url("../img/jpg/bg-bike-tablet@2x.jpg");
-        background-size: 767px 340px; } }
+        background-size: cover; } }
 
 @media (max-width: 767px) {
   .background-container--header {
     height: 390px;
     background-image: url("../img/jpg/bg-bike-mobile@1x.jpg");
-    background-color: #1d1d1d; } }
+    background-color: #1d1d1d;
+    background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .background-container--header {
       background-image: url("../img/jpg/bg-bike-mobile@2x.jpg");
-      background-size: 319px 390px; } }
+      background-size: cover; } }
 
 @media (max-width: 767px) {
   .background-container--nojs {
@@ -907,11 +911,12 @@ img {
     .background-container--nojs::after {
       height: 390px;
       background-color: #1d1d1d;
-      background-image: url("../img/jpg/bg-bike-mobile@1x.jpg"); } }
+      background-image: url("../img/jpg/bg-bike-mobile@1x.jpg");
+      background-size: cover; } }
     @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
       .background-container--nojs::after {
         background-image: url("../img/jpg/bg-bike-mobile@2x.jpg");
-        background-size: 319px 390px; } }
+        background-size: cover; } }
 
 .about-us {
   margin-bottom: 152px; }
